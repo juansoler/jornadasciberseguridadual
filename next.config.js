@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    async redirects() {
+    return [
+      {
+        source: '/',
+        destination: 'https://jornadasciberseguridad.ual.es/',
+        permanent: true,
+      },
+    ];
+  },
     // output: 'export',
     
     // // distDir: 'build',
